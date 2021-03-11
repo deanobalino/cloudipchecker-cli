@@ -83,3 +83,14 @@ Performing ip lookup for: 13.72.105.31 using data source: api
 }
 ```
 
+## TODO
+Some ideas for future enhancements
+
+* Add support for domain names as well as ip addresses
+* Add a `--service` option to search for an Azure service and retrieve the associated prefixes
+* Add a `--region` option to search for an Azure region and retrieve the associated prefixes
+
+## Credits
+
+Created with ❤️ by Dean Bryen  
+💡 Inspiration from Adam Stuart and James Complin

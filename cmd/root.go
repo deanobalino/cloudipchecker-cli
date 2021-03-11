@@ -30,12 +30,15 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "cloudipchecker",
-	Short: "Check if an IP is part of an Azure Service Tag",
+	Short: "Check if an IP is part of an Azure Service Tag. Example: cloudipchecker get --ip 13.72.105.31",
 	Long: `Check if an IP is part of an Azure Service Tag:
 	It will return the:
 	- Region
 	- Service
-	- Address Prefix`,
+	- Address Prefix
+	
+	Example:
+	cloudipchecker get --ip 13.72.105.31`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
