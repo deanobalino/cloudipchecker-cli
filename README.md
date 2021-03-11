@@ -10,7 +10,7 @@ Given an IP address, find out if the IP address resides in Azure, and if so, als
 
 ## Installation
 
-cloudipchecker-cli has no runtime dependencies. You can just [download a binary for Linux, Mac, Windows or FreeBSD and run it](https://github.com/deanobalino/cloudipchecker-cli/releases).
+cloudipchecker-cli has no runtime dependencies. You can just [download a binary for Linux, Mac or Windows and run it](https://github.com/deanobalino/cloudipchecker-cli/releases).
 Put the binary in your `$PATH` (e.g. in `/usr/local/bin`) to make it easy to use:
 ```
 ▶ tar xzf cloudipchecker_0.1.0_Linux_arm64.tar.gz
