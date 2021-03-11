@@ -1,22 +1,22 @@
-project_name: cloudipchecker
+project_name: cloudipchecker-cli
 release:
   github:
     owner: deanobalino
-    name: cloudipchecker
+    name: cloudipchecker-cli
   name_template: '{{.Tag}}'
 milestones:
 - repo:
     owner: deanobalino
-    name: cloudipchecker
+    name: cloudipchecker-cli
   name_template: '{{ .Tag }}'
 scoop:
-  name: cloudipchecker
+  name: cloudipchecker-cli
   commit_author:
     name: goreleaserbot
     email: goreleaser@carlosbecker.com
   commit_msg_template: Scoop update for {{ .ProjectName }} version {{ .Tag }}
 builds:
-- id: cloudipchecker
+- id: cloudipchecker-cli
   goos:
   - linux
   - windows
@@ -40,7 +40,7 @@ builds:
   ldflags:
   - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.Date}}
     -X main.builtBy=goreleaser
-  binary: cloudipchecker
+  binary: cloudipchecker-cli
   env:
   - CGO_ENABLED=0
   lang: go
@@ -48,7 +48,7 @@ builds:
 archives:
 - id: default
   builds:
-  - cloudipchecker
+  - cloudipchecker-cli
   name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm
     }}v{{ .Arm }}{{ end }}{{ if .Mips }}_{{ .Mips }}{{ end }}'
   replacements:
